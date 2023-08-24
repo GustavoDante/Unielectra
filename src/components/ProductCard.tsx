@@ -20,22 +20,25 @@ export function ProductCard({
   feedback,
 }: ProductCardProps) {
   return (
-    <Card className="group relative w-64 bg-white">
+    <Card className="group relative w-full max-w-sm m-auto bg-white">
       <CardContent>
-        <Image
-          src={icon}
-          width={200}
-          height={200}
-          alt="Foto de produto"
-          className="object-cover"
-        />
+        <div className="m-auto">
+          <Image
+            src={icon}
+            width={200}
+            height={200}
+            alt="Foto de produto"
+            className="object-cover"
+          />
+        </div>
+
         <span>{feedback.toFixed(2)}</span>
         <h3 className="text-xl font-semibold">{title}</h3>
-        <div className="flex gap-3 p-2">
-          <span className="line-through font-bold text-slate-500 ">
+        <div className="flex flex-wrap justify-between align-baseline">
+          <span className="font-bold text-xl">{FormatCurrency(price)}</span>
+          <span className="line-through font-bold text-slate-500 self-end">
             {FormatCurrency(oldPrice)}
           </span>
-          <span className="font-bold">{FormatCurrency(price)}</span>
         </div>
         <Button variant={'ghost'} className="mt-2 group absolute right-1 top-1">
           <Image

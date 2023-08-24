@@ -1,10 +1,4 @@
-export function SenderButton() {
-  return (
-    <div className="bg-black rounded-md w-[161px] h-[40px] flex justify-center items-center cursor-pointer hover:scale-105 transition-all">
-      <div className="flex space-x-2 items-center">
-        <span className="text-sm text-white">Seja um vendedor</span>
-        <span>
-          <svg
+<svg
             className="fill-current"
             width="6"
             height="10"
@@ -28,8 +22,3 @@ export function SenderButton() {
               fill="white"
             ></rect>
           </svg>
-        </span>
-      </div>
-    </div>
-  )
-}

@@ -3,6 +3,7 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import { NavigationBar } from '@/components/NavigationBar'
+import { Footer } from '@/components/Footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -24,6 +25,7 @@ export default function RootLayout({
         <main className="flex min-h-screen flex-col items-center justify-between">
           {children}
         </main>
+        <Footer />
       </body>
     </html>
   )
