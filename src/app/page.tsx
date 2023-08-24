@@ -64,7 +64,7 @@ export default function Home() {
             icon={'/placa.jpg'}
             price={2343}
             oldPrice={2390}
-            feedback={5.43}
+            feedback={2}
           />
           <ProductCard
             key={1}
@@ -72,7 +72,7 @@ export default function Home() {
             icon={'/placa.jpg'}
             price={2343}
             oldPrice={2390}
-            feedback={5.43}
+            feedback={3}
           />
           <ProductCard
             key={1}
@@ -80,7 +80,7 @@ export default function Home() {
             icon={'/placa.jpg'}
             price={2343}
             oldPrice={2390}
-            feedback={5.43}
+            feedback={4}
           />
           <ProductCard
             key={1}

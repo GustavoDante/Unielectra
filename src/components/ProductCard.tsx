@@ -22,15 +22,13 @@ export function ProductCard({
   return (
     <Card className="group relative w-full max-w-sm m-auto bg-white shadow-xl">
       <CardContent>
-        <div className="m-auto">
-          <Image
-            src={icon}
-            width={200}
-            height={200}
-            alt="Foto de produto"
-            className="object-cover"
-          />
-        </div>
+        <Image
+          src={icon}
+          width={200}
+          height={200}
+          alt="Foto de produto"
+          className="object-cover m-auto"
+        />
 
         <span>
           <StarRating rating={feedback} />
