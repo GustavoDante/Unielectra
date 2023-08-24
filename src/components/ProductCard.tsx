@@ -4,7 +4,7 @@ import { FormatCurrency } from '@/hooks/FormatCurrency'
 import { Button } from './ui/button'
 import FullyHearthIcon from '../../public/icons/fully-hearth.svg'
 import EmptyHearthicon from '../../public/icons/empty-hearth.svg'
-
+import { StarRating } from './StarRating'
 interface ProductCardProps {
   title: string
   icon: string
@@ -20,7 +20,7 @@ export function ProductCard({
   feedback,
 }: ProductCardProps) {
   return (
-    <Card className="group relative w-full max-w-sm m-auto bg-white">
+    <Card className="group relative w-full max-w-sm m-auto bg-white shadow-xl">
       <CardContent>
         <div className="m-auto">
           <Image
@@ -32,7 +32,9 @@ export function ProductCard({
           />
         </div>
 
-        <span>{feedback.toFixed(2)}</span>
+        <span>
+          <StarRating rating={feedback} />
+        </span>
         <h3 className="text-xl font-semibold">{title}</h3>
         <div className="flex flex-wrap justify-between align-baseline">
           <span className="font-bold text-xl">{FormatCurrency(price)}</span>

@@ -5,7 +5,7 @@ import Image from 'next/image'
 export default function Home() {
   return (
     <div className="w-full space-y-10">
-      <div className="relative w-full h-[600px] px-6 flex">
+      <div className="relative w-full h-[600px] flex">
         <Image
           src="/placas.jpg"
           width={1920}
@@ -13,22 +13,24 @@ export default function Home() {
           className="w-full h-[600px] absolute left-0 object-cover object-bottom -z-10"
           alt={'placas solares enfileiradas em um campo aberto com grama'}
         />
-        <div className="top-10 absolute md:top-1/3 space-y-5 mr-5">
-          <div className="p-6 flex-wrap bg-black/50 rounded-md space-y-5">
-            <h1 className="text-2xl font-extrabold text-yellow-500 drop-shadow-2xl">
-              Iluminando Oportunidades, Maximizando Lucros.
-            </h1>
-            <p className="text-3xl font-semibold text-slate-200">
-              Conectando Negócios, Potencializando o Caminho para o Sucesso.
-            </p>
+        <div className="top-10 absolute w-full md:top-1/3 m-auto">
+          <div className="max-w-7xl space-y-5 m-auto px-6">
+            <div className="p-6 flex-wrap space-y-5 bg-black/50 rounded-md">
+              <h1 className="text-2xl font-extrabold text-yellow-500 drop-shadow-2xl">
+                Iluminando Oportunidades, Maximizando Lucros.
+              </h1>
+              <p className="text-3xl font-semibold text-slate-200">
+                Conectando Negócios, Potencializando o Caminho para o Sucesso.
+              </p>
+            </div>
+            <Button
+              type="button"
+              variant={'yellow'}
+              className="font-semibold text-sm m-auto"
+            >
+              Veja preços
+            </Button>
           </div>
-          <Button
-            type="button"
-            variant={'yellow'}
-            className="font-semibold text-sm"
-          >
-            Veja preços
-          </Button>
         </div>
       </div>
       <section className="grid w-full max-w-7xl m-auto px-6">

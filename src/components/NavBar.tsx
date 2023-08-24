@@ -29,15 +29,46 @@ export function NavBar() {
       </div>
       <div className="hidden md:flex gap-3">
         <button
-          className="bg-white relative hover:bg-gray-200 text-gray-800 font-semibold  py-2 px-4 border border-gray-400 rounded shadow"
+          className="bg-white group relative hover:bg-gray-200 text-gray-800 font-semibold  py-2 px-4 border border-gray-400 rounded shadow"
           type="button"
         >
           <Image
             src={EmptyHearthicon}
-            className="block group-hover:hidden"
+            className="block"
             alt="icone de coração vazio"
           />
           <NotificationLenght length={3} />
+          <FloatingCard.Root>
+            <FloatingCard.Content>
+              <FloatingCard.Item
+                icon={'/placa.jpg'}
+                price={234312}
+                title="placas solares"
+                key={1}
+              />
+              <FloatingCard.Item
+                icon={'/placa.jpg'}
+                price={234312}
+                title="placas solares"
+                key={2}
+              />
+              <FloatingCard.Item
+                icon={'/placa.jpg'}
+                price={234312}
+                title="placas solares"
+                key={2}
+              />
+              <FloatingCard.Item
+                icon={'/placa.jpg'}
+                price={234312}
+                title="placas solares"
+                key={2}
+              />
+            </FloatingCard.Content>
+            <FloatingCard.Footer>
+              <FloatingCard.Link text="Limpar lista" variant="secondary" />
+            </FloatingCard.Footer>
+          </FloatingCard.Root>
         </button>
         <button
           className="bg-white group relative hover:bg-gray-200 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow"
@@ -54,19 +85,19 @@ export function NavBar() {
               <FloatingCard.Item
                 icon={'/placa.jpg'}
                 price={234312}
-                title="Plaquinha amor"
+                title="placas solares"
                 key={1}
               />
               <FloatingCard.Item
                 icon={'/placa.jpg'}
                 price={234312}
-                title="Plaquinha amor"
+                title="placas solares"
                 key={2}
               />
             </FloatingCard.Content>
             <FloatingCard.Footer>
-              <FloatingCard.Link text="teste" variant="secondary" />
-              <FloatingCard.Link text="teste" />
+              <FloatingCard.Link text="Limpar lista" variant="secondary" />
+              <FloatingCard.Link text="Ir para carrinho" />
             </FloatingCard.Footer>
           </FloatingCard.Root>
         </button>
